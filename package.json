@@ -68,8 +68,7 @@
     "mocha": "mocha",
     "build": "grunt build",
     "prepack": "run-s build",
-    "prepare": "husky install",
-    "postinstall": "patch-package"
+    "prepare": "husky install"
   },
   "config": {
     "commitizen": {
@@ -87,8 +86,7 @@
   ],
   "dependencies": {
     "jsonpath-plus": "^0.16.0",
-    "minilog": "^3.1.0",
-    "patch-package": "^8.0.0",
+    "minilog": "file:./browser/lib/shim/log.js",
     "request": "^2.88.0",
     "resolve-url": "^0.2.1",
     "superagent": "^8.0.0",

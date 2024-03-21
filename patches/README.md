@@ -1,3 +1,0 @@
-- minilog+3.1.0.patch:
-  - https://github.com/mixu/minilog/issues/47
-  - https://github.com/traverson/traverson/issues/289
