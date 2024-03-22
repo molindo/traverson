@@ -1,17 +1,11 @@
 'use strict';
 
-var minilog = require('minilog')
-  , errorModule = require('./lib/errors')
+var errorModule = require('./lib/errors')
   , errors = errorModule.errors
   , createError = errorModule.createError
   , mediaTypes = require('./lib/media_types')
   , Builder = require('./lib/builder')
   , mediaTypeRegistry = require('./lib/media_type_registry');
-
-// activate this line to enable logging
-if (process.env.TRAVERSON_LOGGING) {
-  require('minilog').enable();
-}
 
 // export builder for traverson-angular
 exports._Builder = Builder;
