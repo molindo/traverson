@@ -86,7 +86,6 @@
   ],
   "dependencies": {
     "jsonpath-plus": "^0.16.0",
-    "minilog": "^3.1.0",
     "request": "^2.88.0",
     "resolve-url": "^0.2.1",
     "superagent": "^8.0.0",
@@ -122,7 +121,6 @@
     "traverson-test-server": "1.12.1"
   },
   "browser": {
-    "minilog": "./browser/lib/shim/log.js",
     "request": "./browser/lib/shim/request.js",
     "util": "./browser/lib/shim/node-util.js",
     "underscore.string": "./browser/lib/shim/underscore-string-reduced.js",

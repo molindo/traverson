@@ -1,6 +1,6 @@
 'use strict';
 
-var minilog = require('minilog')
+var minilog = require('./browser/lib/shim/log.js')
   , errorModule = require('./lib/errors')
   , errors = errorModule.errors
   , createError = errorModule.createError
@@ -10,7 +10,7 @@ var minilog = require('minilog')
 
 // activate this line to enable logging
 if (process.env.TRAVERSON_LOGGING) {
-  require('minilog').enable();
+  require('./browser/lib/shim/log.js').enable();
 }
 
 // export builder for traverson-angular
